@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ComposePractice</string>
     <string name="title_activity_text_field">TextField</string>
+    <string name="title_activity_list">List</string>
 </resources>
