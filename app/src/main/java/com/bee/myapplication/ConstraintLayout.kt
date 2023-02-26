@@ -20,6 +20,7 @@ class ConstraintLayout : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             val constraintSet = ConstraintSet {
+
                 val yellowBoxRef = createRefFor("yellowBox")
                 val blueBoxRef = createRefFor("blueBox")
 
@@ -43,7 +44,6 @@ class ConstraintLayout : ComponentActivity() {
 
             }
 
-
             ConstraintLayout(constraintSet, modifier = Modifier.fillMaxSize()) {
                 Box(modifier = Modifier
                     .background(Color.Yellow)
@@ -52,6 +52,7 @@ class ConstraintLayout : ComponentActivity() {
                     .background(Color.Blue)
                     .layoutId("blueBox"))
             }
+
         }
     }
 }
